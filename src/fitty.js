@@ -55,7 +55,7 @@ export default ((w) => {
 
     // we now determine which fitties should be redrawn
     const fittiesToRedraw = fitties.filter(shouldRedraw);
-    
+
     // we calculate final styles for these fitties
     fittiesToRedraw.forEach(calculateStyles);
 
@@ -330,7 +330,7 @@ export default ((w) => {
 
   // fitty global properties (by setting observeWindow to true the events above get added)
   fitty.observeWindow = true;
-  fitty.observeWindowDelay = 100;
+  fitty.observeWindowDelay = 0;
 
 
   // public fit all method, will force redraw no matter what

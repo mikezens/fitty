@@ -1,6 +1,6 @@
 /*
  * fitty v2.2.6 - Snugly resizes text to fit its parent container
- * Copyright (c) 2018 Rik Schennink <hello@rikschennink.nl> (http://rikschennink.nl/)
+ * Copyright (c) 2019 Rik Schennink <hello@rikschennink.nl> (http://rikschennink.nl/)
  */
 'use strict';
 
@@ -318,7 +318,7 @@ exports.default = function (w) {
 
   // fitty global properties (by setting observeWindow to true the events above get added)
   fitty.observeWindow = true;
-  fitty.observeWindowDelay = 100;
+  fitty.observeWindowDelay = 0;
 
   // public fit all method, will force redraw no matter what
   fitty.fitAll = redrawAll(DrawState.DIRTY);
